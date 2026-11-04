@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Ejercicio 04</title>
+    <title>Ejercicio 05</title>
     <meta charset="utf-8" name="Manuel Andrades Suárez">
 </head>
 
@@ -12,23 +12,23 @@
         <li>
             <a href="#marcos">Marcos e Integración Externa</a>
             <ul list-style-type="disc">
-                <li><a href="tarea_a1">Tarea A</a></li>
-                <li><a href="tarea_b1">Tarea B</a></li>
-                <li><a href="tarea_c1">Tarea C</a></li>
+                <li><a href="#tarea_a1">Tarea A</a></li>
+                <li><a href="#tarea_b1">Tarea B</a></li>
+                <li><a href="#tarea_c1">Tarea C</a></li>
             </ul>
         </li>
         <li>
             <a href="#reproductores">Reproductores Multimedia Nativos</a>
             <ul list-style-type="disc">
-                <li><a href="tarea_a2">Tarea A</a></li>
-                <li><a href="tarea_b2">Tarea B</a></li>
+                <li><a href="#tarea_a2">Tarea A</a></li>
+                <li><a href="#tarea_b2">Tarea B</a></li>
             </ul>
         </li>
         <li>
             <a href="#graficos">Gráficos Vectoriales y Mapa de Bits</a>
             <ul list-style-type="disc">
-                <li><a href="tarea_a3">Tarea A</a></li>
-                <li><a href="tarea_b3">Tarea B</a></li>
+                <li><a href="#tarea_a3">Tarea A</a></li>
+                <li><a href="#tarea_b3">Tarea B</a></li>
             </ul>
         </li>
     </ol>
@@ -63,13 +63,46 @@
     <p id="tarea_a2"><strong>Tarea A</strong></p>
     <br>
     <video controls width="640" poster="media/portada_video.avif" src="media/Anuncio 100 Años de BMW.mp4"
-        type="video/mp4"></video>
-    <source src="media/Anuncio 100 Años de BMW.ogg" type="video/webm">
-    <p>Tu navegador no soporta la etiqueta de video.</p>
-    </source>
+        type="video/mp4">
+        <source src="media/Anuncio 100 Años de BMW.ogg" type="video/webm">
+        <p>Tu navegador no soporta la etiqueta de video.</p>
+    </video>
+
     <br>
     <p id="tarea_b2"><strong>Tarea B</strong></p>
     <br>
+    <audio controls>
+        <source src="media/audiocopper-office-628023.mp3" type="audio/mp3">
+        <source src="media/audiocopper-office-628023.ogg" type="audio/ogg">
+    </audio>
+    <br>
+    <br>
+    <hr>
+    <h2 id="graficos">Gráficos Vectoriales y Mapa de Bits</h2>
+    <p id="tarea_a3"><strong>Tarea A</strong></p>
+    <br>
+    <svg width="200" height="200">
+        <rect fill="blue" width="100%" height="100%"></rect>
+        <circle fill="yellow" stroke="red" cx="100" cy="100" r="50"></circle>
+    </svg>
+    <br>
+    <p id="tarea_b3"><strong>Tarea B</strong></p>
+    <br>
+    <canvas id="miLienzo" width="300" height="150">
+        <p>Tu navegador no soporta el elemento Canvas.</p>
+        <script>
+            const canvas = document.getElementById('miLienzo');
+            const ctx = canvas.getContext('2d');
+            ctx.fillStyle = 'green';
+            ctx.fillRect(10, 10, 150, 80);
+            ctx.moveTo(0, 0);
+            ctx.lineTo(200, 100);
+            ctx.stroke(); 
+        </script>
+    </canvas>
+    <hr>
+    <br>
+    <a href="../index.html">Índice</a>
 </body>
 
 </html>
