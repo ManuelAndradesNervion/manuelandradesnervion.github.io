@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Formulario de encuesta</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <form action="https://lm.ciclo.iesnervion.es/encuesta.php" method="post">
+        <fieldset>
+            <legend>Datos Académicos</legend>
+            <label for="nombreYApellidos">Nombre y apellidos:</label>
+            <input type="text" id="nombreYApellidos" name="nombreYApellidos" placeholder="Nombre y apellidos" required>
+            <br>
+            <br>
+            <label for="ciclo">Ciclo formativo:</label>
+            <select id="ciclo" name="ciclo">
+                <option value="">Seleccione un ciclo formativo</option>
+                <option value="DAM" selected>DAM</option>
+                <option value="DAW">DAW</option>
+                <option value="ASIR">ASIR</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Preferencias Técnicas</legend>
+            <label for="lenguaje">Lenguaje principal:</label>
+            <input type="radio" id="lenguaje" name="lenguaje" value="Java" required> Java
+            <input type="radio" id="lenguaje" name="lenguaje" value="Python" required> Python
+            <input type="radio" id="lenguaje" name="lenguaje" value="C++" required> C++
+            <input type="radio" id="lenguaje" name="lenguaje" value="JavaScript" required> JavaScript
+            <br>
+            <br>
+            <label for="entornos">Entornos de trabajo habituales:</label>
+            <input type="checkbox" id="entornos" name="entornos" value="Linux"> Linux
+            <input type="checkbox" id="entornos" name="entornos" value="Windows"> Windows
+            <input type="checkbox" id="entornos" name="entornos" value="macOS"> macOS
+            <br>
+            <br>
+            <label for="comentarios">Comentarios / Experiencia previa:</label>
+            <textarea id="comentarios" name="comentarios" rows="4" cols="40"
+                placeholder="Pon aquí tus comentarios o experiencia previa."></textarea>
+        </fieldset>
+        <br>
+        <button type="reset" value="Restablecer">Restablecer formulario</button>
+        <br>
+        <br>
+        <button type="submit" value="Enviar encuesta">Enviar los datos</button>
+    </form>
+</body>
+
+</html>
