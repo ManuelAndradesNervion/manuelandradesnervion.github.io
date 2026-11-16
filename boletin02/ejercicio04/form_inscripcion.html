@@ -1,17 +1,50 @@
 <!DOCTYPE html>
 <html>
-    <head>
+
+<head>
     <title>Ejercicio 04</title>
     <meta charset="utf-8">
-    </head>
-    <body>
-        <fieldset>
-            <legend>Formulario de inscripción</legend>
-            <form action="https://lm.ciclo.iesnervion.es/inscripcion.php" method="post" enctype="multipart/form-data">
-            </form>
-        </fieldset>
-        <hr>
-        <br>
-        <a href="../index.html">Índice</a>
-    </body>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Formulario de inscripción</legend>
+        <form action="https://lm.ciclo.iesnervion.es/inscripcion.php" method="post" enctype="multipart/form-data">
+            <label for="Equipo">Nombre de equipo:</label>
+            <input type="text" id="Equipo" name="Equipo" required autofocus>
+            <br>
+            <br>
+            <label for="codigo_registro">Código de registro:</label>
+            <input type="text" id="codigo_registro" name="codigo_registro" value="HACK-2026-SEV" readonly>
+            <br>
+            <br>
+            <label for="fecha" min="2026-12-01" max="2026-12-15">Fecha de llegada:</label>
+            <input type="date" id="fecha" name="fecha" required>
+            <br>
+            <br>
+            <label for="hora">Hora de presentación:</label>
+            <input type="time" id="hora" name="hora" required>
+            <br>
+            <br>
+            <label for="color">Color identificativo del equipo:</label>
+            <input type="color" id="color" name="color">
+            <br>
+            <br>
+            <label for="nivel_java">Nivel estimado de Java (0-100):</label>
+            <input type="range" id="nivel_java" name="nivel_java" min="0" max="100" step="5">
+            <br>
+            <br>
+            <label for="expediente">Subir Expediente / CV:</label>
+            <input type="file" id="expediente" name="expediente" accept=".pdf">
+        </form>
+    </fieldset>
+    <br>
+    <button type="submit" value="finalizarInscripcion">Finalizar inscripción</button>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <a href="../index.html">Índice</a>
+</body>
+
 </html>
